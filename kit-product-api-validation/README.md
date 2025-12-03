@@ -1,3 +1,3939 @@
 # Kit/Product API Validation Project
 
 This folder contains my API testing project for the kit/product feature, including Postman collections, test cases, and bug reports.
+[My Collection.postman_collection.json](https://github.com/user-attachments/files/23896568/My.Collection.postman_collection.json)
+{
+	"info": {
+		"_postman_id": "3dae118d-639e-4a2b-a066-8f0a47552e03",
+		"name": "My Collection",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48892850",
+		"_collection_link": "https://jsmithtripleten-4852890.postman.co/workspace/Project-4~9c3ff400-8e65-44ca-b28d-7b35c9074e10/collection/48892850-3dae118d-639e-4a2b-a066-8f0a47552e03?action=share&source=collection_link&creator=48892850"
+	},
+	"item": [
+		{
+			"name": "test4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    { \"id\": 1, \"quantity\": 6 },\r\n    { \"id\": 6, \"quantity\": 10 },\r\n    { \"id\": 27, \"quantity\": 1 },\r\n    { \"id\": 78, \"quantity\": 1 },\r\n    { \"id\": 79, \"quantity\": 1 },\r\n    { \"id\": 80, \"quantity\": 1 },\r\n    { \"id\": 81, \"quantity\": 1 },\r\n    { \"id\": 87, \"quantity\": 1 },\r\n    { \"id\": 89, \"quantity\": 1 },\r\n    { \"id\": 90, \"quantity\": 1 },\r\n    { \"id\": 91, \"quantity\": 1 },\r\n    { \"id\": 92, \"quantity\": 1 },\r\n    { \"id\": 93, \"quantity\": 1 },\r\n    { \"id\": 94, \"quantity\": 1 },\r\n    { \"id\": 95, \"quantity\": 1 },\r\n    { \"id\": 96, \"quantity\": 1 },\r\n    { \"id\": 97, \"quantity\": 1 },\r\n    { \"id\": 98, \"quantity\": 1 },\r\n    { \"id\": 99, \"quantity\": 1 },\r\n    { \"id\": 100, \"quantity\": 1 },\r\n    { \"id\": 101, \"quantity\": 1 },\r\n    { \"id\": 102, \"quantity\": 1 },\r\n    { \"id\": 103, \"quantity\": 1 },\r\n    { \"id\": 104, \"quantity\": 1 },\r\n    { \"id\": 105, \"quantity\": 1 },\r\n    { \"id\": 106, \"quantity\": 1 },\r\n    { \"id\": 107, \"quantity\": 1 },\r\n    { \"id\": 108, \"quantity\": 1 },\r\n    { \"id\": 109, \"quantity\": 1 },\r\n    { \"id\": 110, \"quantity\": 1 }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					],
+					"query": [
+						{
+							"key": "cardId",
+							"value": "1",
+							"description": "the id of the card is in the card_model table. When passing the parameter, it returns all kits included in the card.",
+							"disabled": true
+						}
+					]
+				},
+				"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "test 19",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    { \"id\": 1, \"quantity\": 6 },\r\n    { \"id\": 6, \"quantity\": 10 },\r\n    { \"id\": 27, \"quantity\": 1 },\r\n    { \"id\": 78, \"quantity\": 1 },\r\n    { \"id\": 79, \"quantity\": 1 },\r\n    { \"id\": 80, \"quantity\": 1 },\r\n    { \"id\": 81, \"quantity\": 1 },\r\n    { \"id\": 87, \"quantity\": 1 },\r\n    { \"id\": 89, \"quantity\": 1 },\r\n    { \"id\": 90, \"quantity\": 1 },\r\n    { \"id\": 91, \"quantity\": 1 },\r\n    { \"id\": 92, \"quantity\": 1 },\r\n    { \"id\": 93, \"quantity\": 1 },\r\n    { \"id\": 94, \"quantity\": 1 },\r\n    { \"id\": 95, \"quantity\": 1 },\r\n    { \"id\": 96, \"quantity\": 1 },\r\n    { \"id\": 97, \"quantity\": 1 },\r\n    { \"id\": 98, \"quantity\": 1 },\r\n    { \"id\": 99, \"quantity\": 1 },\r\n    { \"id\": 100, \"quantity\": 1 },\r\n    { \"id\": 101, \"quantity\": 1 },\r\n    { \"id\": 102, \"quantity\": 1 },\r\n    { \"id\": 103, \"quantity\": 1 },\r\n    { \"id\": 104, \"quantity\": 1 },\r\n    { \"id\": 105, \"quantity\": 1 },\r\n    { \"id\": 106, \"quantity\": 1 },\r\n    { \"id\": 107, \"quantity\": 1 },\r\n    { \"id\": 108, \"quantity\": 1 },\r\n    { \"id\": 109, \"quantity\": 1 },\r\n    { \"id\": 110, \"quantity\": 1 }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					],
+					"query": [
+						{
+							"key": "cardId",
+							"value": "1",
+							"description": "the id of the card is in the card_model table. When passing the parameter, it returns all kits included in the card.",
+							"disabled": true
+						}
+					]
+				},
+				"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "test12",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test11",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    { \"id\": 3, \"quantity\": 2 }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    {\r\n      \"id\": 3,\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/abc/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"abc",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test9",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    { \"id\": 3, \"quantity\": 1.5 }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 8",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    { \"id\": 3, \"quantity\": 1.5 }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productsList\": [\r\n        {\r\n            \"id\": 9999,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"id\": 6,\r\n            \"quantity\": 2\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck17",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    { \"quantity\": 2 }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck22",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    {\r\n      \"id\": 5,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck23",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    {\r\n      \"id\": 5,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck24",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    {\r\n      \"id\": 5,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck25",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    {\r\n      \"id\": 3,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/12345678901/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"12345678901",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck26",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    {\r\n      \"id\": 3,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/1/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck27",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    {\r\n      \"id\": 3,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/0/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"0",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck28",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productsList\": [\r\n        {\r\n            \"id\": 9999,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"id\": 6,\r\n            \"quantity\": 2\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck29",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    {\r\n      \"id\": 5,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck30",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  \"productsList\": [\r\n    {\r\n      \"id\": \"\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck31",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  \"productsList\": [\r\n    {\r\n      \"id\": \"\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck32",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": [\r\n    {\r\n      \"id\": 3,\r\n      \"quantity\": \"2\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck33",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  \"productsList\": [\r\n    {\r\n      \"id\": \"\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck34",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  \"productsList\": [\r\n    {\r\n      \"id\": \"\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck35",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  \"productsList\": [\r\n    {\r\n      \"id\": \"\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck36",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tck37",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productsList\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/api/v1/kits/6/products",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kits",
+						"6",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Goods list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Req2,1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>1</productsCount>\r\n    <productsWeight>0</productsWeight>\r\n    <deliveryTime>7</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>7</productsCount>\r\n    <productsWeight>2.5</productsWeight>\r\n    <deliveryTime>21</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>7</productsCount>\r\n    <productsWeight>2.5</productsWeight>\r\n    <deliveryTime>21</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 5",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>1</productsCount>\r\n    <productsWeight>0</productsWeight>\r\n    <deliveryTime>7</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 6",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>6</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 7",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>22</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 8",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>ten</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 9",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n</InputModel>\r\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 10",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>0</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 11",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>15</productsCount>\r\n    <productsWeight>3</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 12",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>-1</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 13",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>abc</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 14",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 15",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>-1</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 16",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>10</productsCount>\r\n    <productsWeight>6.1</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 17",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>3</productsCount>\r\n    <productsWeight>3</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 18",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>two</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>\r\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 19",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 20",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<request>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</request>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 21",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>0</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 22",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>23</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 23",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>7.5</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 24",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>7.5</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 25",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>3.5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 26",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>1000</productsCount>\r\n    <productsWeight>6</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 27",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>8</productsCount>\r\n    <productsWeight>1</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 28",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>8</productsCount>\r\n    <productsWeight>2.6</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 29",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<request>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</request>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 30",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<request>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</request>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 31",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<request>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</request>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 32",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>8</productsCount>\r\n    <productsWeight>0</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 33",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<request>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</request>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 34",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 35",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 36",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>8</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test 37",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD37",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>0</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD38",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD39",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2.5</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD40",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2.6</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD41",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2.7</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD42",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>5.9</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD43",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>6.0</productsWeight>\r\n    <deliveryTime>10</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD44",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD45",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD46",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD47",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD48",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD49",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD50",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD51",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD52",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD53",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD54",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD55",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD56",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD57",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD58",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD59",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TCFD60",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<InputModel>\r\n    <productsCount>5</productsCount>\r\n    <productsWeight>2</productsWeight>\r\n    <deliveryTime>20</deliveryTime>\r\n</InputModel>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/fast-delivery/v3.1.1/calculate-delivery.xml?productsCount=5&productsWeight=2&deliveryTime=10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fast-delivery",
+						"v3.1.1",
+						"calculate-delivery.xml"
+					],
+					"query": [
+						{
+							"key": "productsCount",
+							"value": "5",
+							"description": "Number of products in the order"
+						},
+						{
+							"key": "productsWeight",
+							"value": "2",
+							"description": "Weight of all items"
+						},
+						{
+							"key": "deliveryTime",
+							"value": "10",
+							"description": "Expected delivery time"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
